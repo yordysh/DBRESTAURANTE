@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace POS.Domain.Entities
 {
-    public partial class Cartum
+    public class Carta
     {
-        public Cartum()
+        public Carta()
         {
             Restaurantes = new HashSet<Restaurante>();
         }

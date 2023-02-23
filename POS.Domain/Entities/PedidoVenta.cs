@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace POS.Domain.Entities
 {
-    public partial class PedidoVentum
+    public partial class PedidoVenta
     {
-        public PedidoVentum()
+        public PedidoVenta()
         {
             Restaurantes = new HashSet<Restaurante>();
         }

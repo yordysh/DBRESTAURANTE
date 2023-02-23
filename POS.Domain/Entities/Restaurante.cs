@@ -7,7 +7,7 @@ namespace POS.Domain.Entities
     {
         public Restaurante()
         {
-            Carta = new HashSet<Cartum>();
+            Carta = new HashSet<Carta>();
         }
 
         public int IdRestaurante { get; set; }
@@ -16,8 +16,8 @@ namespace POS.Domain.Entities
         public int? IdCarta { get; set; }
         public int? IdPedido { get; set; }
 
-        public virtual Cartum? IdCartaNavigation { get; set; }
-        public virtual PedidoVentum? IdPedidoNavigation { get; set; }
-        public virtual ICollection<Cartum> Carta { get; set; }
+        public virtual Carta? IdCartaNavigation { get; set; }
+        public virtual PedidoVenta? IdPedidoNavigation { get; set; }
+        public virtual ICollection<Carta> Carta { get; set; }
     }
 }

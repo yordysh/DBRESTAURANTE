@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace POS.Domain.Entities
 {
-    public partial class Recetum
+    public partial class Receta
     {
-        public Recetum()
+        public Receta()
         {
             Platos = new HashSet<Plato>();
         }
@@ -17,7 +17,7 @@ namespace POS.Domain.Entities
         public int? IdMedida { get; set; }
 
         public virtual Ingrediente? IdIngredienteNavigation { get; set; }
-        public virtual Medidum? IdMedidaNavigation { get; set; }
+        public virtual Medida? IdMedidaNavigation { get; set; }
         public virtual ICollection<Plato> Platos { get; set; }
     }
 }

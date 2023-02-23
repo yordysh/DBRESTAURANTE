@@ -7,7 +7,7 @@ namespace POS.Domain.Entities
     {
         public DetallePedido()
         {
-            PedidoVenta = new HashSet<PedidoVentum>();
+            PedidoVenta = new HashSet<PedidoVenta>();
         }
 
         public int IdDetallePedido { get; set; }
@@ -16,6 +16,6 @@ namespace POS.Domain.Entities
         public int? Cantidad { get; set; }
 
         public virtual Plato? IdPlatoNavigation { get; set; }
-        public virtual ICollection<PedidoVentum> PedidoVenta { get; set; }
+        public virtual ICollection<PedidoVenta> PedidoVenta { get; set; }
     }
 }

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace POS.Domain.Entities
 {
-    public partial class Encargado
+    public class Encargado
     {
         public Encargado()
         {
-            Categoria = new HashSet<Categorium>();
+            Categoria = new HashSet<Categoria>();
         }
 
         public int IdEncargado { get; set; }
@@ -17,6 +17,6 @@ namespace POS.Domain.Entities
         public string? Dni { get; set; }
         public string? Direccion { get; set; }
 
-        public virtual ICollection<Categorium> Categoria { get; set; }
+        public virtual ICollection<Categoria> Categoria { get; set; }
     }
 }

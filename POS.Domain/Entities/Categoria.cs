@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace POS.Domain.Entities
 {
-    public partial class Categorium
+    public  class Categoria
     {
-        public Categorium()
+        public Categoria()
         {
             Platos = new HashSet<Plato>();
         }

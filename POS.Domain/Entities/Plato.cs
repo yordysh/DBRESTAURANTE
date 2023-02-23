@@ -7,7 +7,7 @@ namespace POS.Domain.Entities
     {
         public Plato()
         {
-            Carta = new HashSet<Cartum>();
+            Carta = new HashSet<Carta>();
             DetallePedidos = new HashSet<DetallePedido>();
         }
 
@@ -18,10 +18,10 @@ namespace POS.Domain.Entities
         public int? IdCategoria { get; set; }
         public int? IdReceta { get; set; }
 
-        public virtual Categorium? IdCategoriaNavigation { get; set; }
+        public virtual Categoria? IdCategoriaNavigation { get; set; }
         public virtual NivelDeDificultad? IdNdeDificultadNavigation { get; set; }
-        public virtual Recetum? IdRecetaNavigation { get; set; }
-        public virtual ICollection<Cartum> Carta { get; set; }
+        public virtual Receta? IdRecetaNavigation { get; set; }
+        public virtual ICollection<Carta> Carta { get; set; }
         public virtual ICollection<DetallePedido> DetallePedidos { get; set; }
     }
 }

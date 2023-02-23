@@ -7,7 +7,7 @@ namespace POS.Domain.Entities
     {
         public Ingrediente()
         {
-            Receta = new HashSet<Recetum>();
+            Receta = new HashSet<Receta>();
         }
 
         public int IdIngrediente { get; set; }
@@ -15,6 +15,6 @@ namespace POS.Domain.Entities
         public decimal? PrecioCompra { get; set; }
         public int? StockAlmacen { get; set; }
 
-        public virtual ICollection<Recetum> Receta { get; set; }
+        public virtual ICollection<Receta> Receta { get; set; }
     }
 }
